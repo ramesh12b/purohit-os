@@ -1,0 +1,6 @@
+{
+  "name": "Purohit OS & Ritual Companion",
+  "description": "Ritual Commerce & Priest Operating System with AI voice workflow, D-1 Samagri tracking, Panchang engine, and Google Chat ritual coordination.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

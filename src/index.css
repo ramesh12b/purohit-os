@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-primary: #C2341D;
+    --brand-primary-hover: #A82A16;
+    --brand-gold: #D97706;
+    --brand-surface: #FFFFFF;
+    --brand-bg: #FBF9F5;
+  }
+
+  body {
+    background-color: var(--brand-bg);
+    color: #1C1917;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Ensure smooth scrolling and tap highlight */
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Typography Utility for Sacred & Classical display */
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-serif-sacred {
+  font-family: 'Rozha One', serif;
+}
+
+/* Custom mobile bottom sheet animation */
+@keyframes slideUpBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bottom-sheet {
+  animation: slideUpBottom 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-dialog-scale {
+  animation: fadeInScale 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Touch target minimum size helper */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Hide scrollbars for clean horizontal pills while maintaining accessibility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

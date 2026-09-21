@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        try {
+          var _currentFetch = window.fetch;
+          if (_currentFetch) {
+            try {
+              Object.defineProperty(window, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function() { return _currentFetch; },
+                set: function(fn) { _currentFetch = fn; }
+              });
+            } catch (err) {
+              try {
+                var proto = Object.getPrototypeOf(window);
+                if (proto) {
+                  Object.defineProperty(proto, 'fetch', {
+                    configurable: true,
+                    enumerable: true,
+                    get: function() { return _currentFetch; },
+                    set: function(fn) { _currentFetch = fn; }
+                  });
+                }
+              } catch (e2) {}
+            }
+          }
+        } catch (e) {}
+
+        window.addEventListener('error', function(event) {
+          if (event && event.message && event.message.indexOf('fetch') !== -1 && event.message.indexOf('only a getter') !== -1) {
+            event.preventDefault();
+            if (typeof event.stopImmediatePropagation === 'function') {
+              event.stopImmediatePropagation();
+            }
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purohit OS &amp; Ritual Companion</title>
+    <meta name="description" content="Ritual Commerce &amp; Priest Operating System with AI voice workflow, D-1 Samagri tracking, Panchang engine, and Google Chat ritual coordination." />
+    <meta property="og:title" content="Purohit OS &amp; Ritual Companion" />
+    <meta property="og:description" content="Ritual Commerce &amp; Priest Operating System with AI voice workflow, D-1 Samagri tracking, Panchang engine, and Google Chat ritual coordination." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

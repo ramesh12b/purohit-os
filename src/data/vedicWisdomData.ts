@@ -1,0 +1,238 @@
+export interface VedicVerse {
+  id: string;
+  tithiKeyword: string;
+  tithiName: string;
+  lunarDay: number;
+  deity: string;
+  sanskrit: string;
+  transliteration: string;
+  english: string;
+  source: string;
+  essence: string;
+  ritualContext: string;
+}
+
+export const VEDIC_WISDOM_COLLECTION: VedicVerse[] = [
+  {
+    id: 'verse-dashami',
+    tithiKeyword: 'Dashami',
+    tithiName: 'Dashami (10th Lunar Day) — Vijaya & Dharma Siddhi',
+    lunarDay: 10,
+    deity: 'Dharma Devata & Sri Durga',
+    sanskrit: 'संगच्छध्वं संवदध्वं सं वो मनांसि जानताम् । देवा भागं यथा पूर्वे सञ्जानाना उपासते ॥',
+    transliteration: 'Saṅgacchadhvaṁ saṁvadadhvaṁ saṁ vo manāṁsi jānatām | Devā bhāgaṁ yathā pūrve sañjānānā upāsate ||',
+    english: 'Move together in harmony, speak with one heart, and let your minds know each other in unified wisdom, as the ancient illumined souls partook of their shared sacred offerings.',
+    source: 'Rigveda Samhita 10.191.2',
+    essence: 'Universal Accord & Collective Concord',
+    ritualContext: 'Chanted during the unified Mahapuja Sankalpa to bind the host family and assembly in spiritual focus.',
+  },
+  {
+    id: 'verse-pratipada',
+    tithiKeyword: 'Pratipada',
+    tithiName: 'Pratipada (1st Lunar Day) — Agni & Cosmic Genesis',
+    lunarDay: 1,
+    deity: 'Agni Devata (Cosmic Priest)',
+    sanskrit: 'अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम् । होतारं रत्नधातमम् ॥',
+    transliteration: 'Agnim īḻe purohitaṁ yajñasya devam ṛtvijam | Hotāraṁ ratnadhātamam ||',
+    english: 'I praise Agni, the primal Purohit and supreme guide of the sacrifice, the divine ministrant who summons divine grace and bestows supreme spiritual treasures.',
+    source: 'Rigveda Samhita 1.1.1',
+    essence: 'Primal Awakening & Light of Purohitya',
+    ritualContext: 'First foundational mantra recited during Agni Mukha and sacred kindling (Arani Mathana).',
+  },
+  {
+    id: 'verse-dwitiya',
+    tithiKeyword: 'Dwitiya',
+    tithiName: 'Dwitiya (2nd Lunar Day) — Vitality & Divine Union',
+    lunarDay: 2,
+    deity: 'Ashvins & Brahma',
+    sanskrit: 'ॐ सह नाववतु । सह नौ भुनक्तु । सह वीर्यं करवावहै । तेजस्वि नावधीतमस्तु मा विद्विषावहै ॥',
+    transliteration: 'Oṁ saha nāvavatu | saha nau bhunaktu | saha vīryaṁ karavāvahai | tejasvi nāvadhītamastu mā vidviṣāvahai ||',
+    english: 'May the Supreme protect both master and seeker together. May we be nourished together. May we strive together with great energy. May our learning be effulgent and let there be no animosity between us.',
+    source: 'Taittiriya Upanishad (Shanti Patha)',
+    essence: 'Reciprocal Reverence & Sacred Partnership',
+    ritualContext: 'Invoked before commencing sacred study, Vivaha Samskara, and Veda Parayanam.',
+  },
+  {
+    id: 'verse-tritiya',
+    tithiKeyword: 'Tritiya',
+    tithiName: 'Tritiya (3rd Lunar Day) — Gauri & Eternal Auspiciousness',
+    lunarDay: 3,
+    deity: 'Devi Gauri & Mahalakshmi',
+    sanskrit: 'सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके । शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते ॥',
+    transliteration: 'Sarvamangala-māngalye śive sarvārtha-sādhike | śaraṇye tryambake gauri nārāyaṇi namo’stu te ||',
+    english: 'Salutations to Thee, O Narayani, the auspiciousness of all that is auspicious, the consoler, the fulfiller of all righteous desires, the three-eyed mother who grants refuge.',
+    source: 'Devi Mahatmyam 11.10',
+    essence: 'Auspicious Fulfillments & Gracious Abundance',
+    ritualContext: 'Chanted during Suvasini Puja, Haldi-Kumkum, and Griha Pravesh threshold ceremonies.',
+  },
+  {
+    id: 'verse-chaturthi',
+    tithiKeyword: 'Chaturthi',
+    tithiName: 'Chaturthi (4th Lunar Day) — Vighneshwara & Removal of Hurdles',
+    lunarDay: 4,
+    deity: 'Sri Maha Ganapati',
+    sanskrit: 'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ । निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥',
+    transliteration: 'Vakratuṇḍa mahākāya sūryakoṭi samaprabha | nirvighnaṁ kuru me deva sarvakāryeṣu sarvadā ||',
+    english: 'O Lord with the curved trunk and immense form, radiant with the effulgence of ten million suns, please make all my righteous endeavors free from obstacles at all times.',
+    source: 'Ganesha Purana',
+    essence: 'Transcendence of Obstacles & Auspicious Beginnings',
+    ritualContext: 'Inaugural dhyana shloka recited prior to every Hindu Samskara, Vrata, and Homa.',
+  },
+  {
+    id: 'verse-panchami',
+    tithiKeyword: 'Panchami',
+    tithiName: 'Panchami (5th Lunar Day) — Savitur & Intellect Illumination',
+    lunarDay: 5,
+    deity: 'Savitur & Gayatri Devi',
+    sanskrit: 'ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि । धियो यो नः प्रचोदयात् ॥',
+    transliteration: 'Oṁ bhūr bhuvaḥ svaḥ tat savitur vareṇyaṁ bhargo devasya dhīmahi | dhiyo yo naḥ pracodayāt ||',
+    english: 'We meditate upon the supreme, adorable radiance of the Divine Savitur, the inner creator. May that luminous presence illuminate and guide our intellect towards truth.',
+    source: 'Rigveda Samhita 3.62.10',
+    essence: 'Spiritual Enlightenment & Awakening of Medha',
+    ritualContext: 'The supreme Gayatri mantra, chanted during Sandhyavandanam and Brahmopadesha.',
+  },
+  {
+    id: 'verse-shashti',
+    tithiKeyword: 'Shashti',
+    tithiName: 'Shashti (6th Lunar Day) — Skanda & Fortitude of Will',
+    lunarDay: 6,
+    deity: 'Lord Kartikeya / Subrahmanya',
+    sanskrit: 'कार्तिकेयं महाभागं मयूरवरवाहनम् । शक्तिहस्तं सुरश्रेष्ठं प्रणमामि गुहं सदा ॥',
+    transliteration: 'Kārtikeyaṁ mahābhāgaṁ mayūra-vara-vāhanam | śakti-hastaṁ sura-śreṣṭhaṁ praṇamāmi guhaṁ sadā ||',
+    english: 'I forever bow to Lord Kartikeya, the exalted warrior riding upon the peacock, wielding the lance of pure intellect (Jnana Shakti) and defending dharma.',
+    source: 'Skanda Purana',
+    essence: 'Courage, Focus, & Protection of Dharma',
+    ritualContext: 'Invoked for planetary pacification (Kuja Shanti) and blessing children with health and courage.',
+  },
+  {
+    id: 'verse-saptami',
+    tithiKeyword: 'Saptami',
+    tithiName: 'Saptami (7th Lunar Day) — Surya Bhagavan & Prana Radiance',
+    lunarDay: 7,
+    deity: 'Surya Narayana',
+    sanskrit: 'आकृष्णेन रजसा वर्तमानो निवेशयन्नमृतं मर्त्यं च । हिरण्ययेन सविता रथेना देवो याति भुवनानि पश्यन् ॥',
+    transliteration: 'Ā kṛṣṇena rajasā vartamāno niveśayann amṛtaṁ martyañca | hiraṇyayena savitā rathenā devo yāti bhuvanāni paśyan ||',
+    english: 'Rolling through the celestial expanse, sustaining both mortals and immortals, the golden-charioted solar divinity traverses all worlds, witnessing everything in truth.',
+    source: 'Rigveda Samhita 1.35.2',
+    essence: 'Vital Pranic Health, Vitality, & Inner Vision',
+    ritualContext: 'Chanted during early morning Arghya offerings and Surya Namaskara homa.',
+  },
+  {
+    id: 'verse-ashtami',
+    tithiKeyword: 'Ashtami',
+    tithiName: 'Ashtami (8th Lunar Day) — Durga & Inner Strength',
+    lunarDay: 8,
+    deity: 'Maha Durga & Bhadrakali',
+    sanskrit: 'दुर्गे स्मृता हरसि भीतिमशेषजन्तोः स्वस्थैः स्मृता मतिमतीव शुभां ददासि । दारिद्र्यदुःखभयहारिणि का त्वदन्या सर्वोपकारकरणाय सदार्द्रचित्ता ॥',
+    transliteration: 'Durge smṛtā harasi bhītim aśeṣa jantoḥ svasthaiḥ smṛtā matim atīva śubhāṁ dadāsi | dāridrya-duḥkha-bhaya-hāriṇi kā tvad-anyā sarvopakāra-karaṇāya sadārdra-cittā ||',
+    english: 'Remembered in distress, You remove fear from all living beings; remembered in peace, You bestow noble thoughts. Who else but You possesses a heart forever brimming with compassion to banish poverty and grief?',
+    source: 'Devi Mahatmyam 4.17',
+    essence: 'Fearlessness & Maternal Grace',
+    ritualContext: 'Recited on Durgashtami, Chandi Patha, and Navaratri homas.',
+  },
+  {
+    id: 'verse-navami',
+    tithiKeyword: 'Navami',
+    tithiName: 'Navami (9th Lunar Day) — Sri Rama & Rectitude of Conduct',
+    lunarDay: 9,
+    deity: 'Sri Rama & Matrikas',
+    sanskrit: 'रामो विग्रहवान् धर्मः साधुः सत्यपराक्रमः । राजा सर्वस्य लोकस्य देवानामिव वासवः ॥',
+    transliteration: 'Rāmo vigrahavān dharmaḥ sādhuḥ satyaparākramaḥ | rājā sarvasya lokasya devānāmiva vāsavaḥ ||',
+    english: 'Rama is the very embodiment of Dharma, virtuous and steadfast in righteous valor, the guardian sovereign of all creation just as Indra is to the celestials.',
+    source: 'Valmiki Ramayana, Aranya Kanda 37.13',
+    essence: 'Righteous Integrity (Satya & Maryada)',
+    ritualContext: 'Chanted in Ramarchana, Sita Kalyanam, and family harmony rituals.',
+  },
+  {
+    id: 'verse-ekadashi',
+    tithiKeyword: 'Ekadashi',
+    tithiName: 'Ekadashi (11th Lunar Day) — Sri Vishnu & Spiritual Ascendance',
+    lunarDay: 11,
+    deity: 'Maha Vishnu / Narayana',
+    sanskrit: 'सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥',
+    transliteration: 'Sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja | ahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ ||',
+    english: 'Surrender all ego-bound notions of self-righteousness and take refuge in Me alone. I shall liberate you from all karmic sorrow; do not despair.',
+    source: 'Bhagavad Gita 18.66',
+    essence: 'Total Surrender (Sharanagati) & Inner Awakening',
+    ritualContext: 'Core meditation during Ekadashi fasting, Vishnu Sahasranama Stotram, and Tulasi Puja.',
+  },
+  {
+    id: 'verse-dvadashi',
+    tithiKeyword: 'Dvadashi',
+    tithiName: 'Dvadashi (12th Lunar Day) — Sustenance, Dana & Yajna',
+    lunarDay: 12,
+    deity: 'Vishnu & Annapurna',
+    sanskrit: 'अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः । यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥',
+    transliteration: 'Annād bhavanti bhūtāni parjanyād anna-sambhavaḥ | yajñād bhavati parjanyo yajñaḥ karma-samudbhavaḥ ||',
+    english: 'From sacred food are beings nurtured; from cosmic rains is food produced; from sacred sacrifice (Yajna) arises rains; and Yajna is born of selfless righteous action.',
+    source: 'Bhagavad Gita 3.14',
+    essence: 'Cosmic Cycle of Reciprocity & Dana',
+    ritualContext: 'Recited during Annadana (food offering), Purnahuti, and Brahmin Bhojana.',
+  },
+  {
+    id: 'verse-trayodashi',
+    tithiKeyword: 'Trayodashi',
+    tithiName: 'Trayodashi (13th Lunar Day) — Pradosha & Lord Shiva',
+    lunarDay: 13,
+    deity: 'Shiva Chandrashekhara',
+    sanskrit: 'त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् । उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात् ॥',
+    transliteration: 'Tryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam | urvārukam iva bandhanān mṛtyor mukṣīya māmṛtāt ||',
+    english: 'We worship the fragrant, three-eyed Lord Shiva who nourishes all living beings. As a ripe gourd is freed from its creeper stem, may we be liberated from mortal bondage into timeless immortality.',
+    source: 'Rigveda Samhita 7.59.12 (Maha Mrityunjaya)',
+    essence: 'Healing, Longevity & Transmutation of Mortality',
+    ritualContext: 'Chanted during Pradosham Rudrabhishekam, Mrityunjaya Homa, and Ayushya Homam.',
+  },
+  {
+    id: 'verse-chaturdashi',
+    tithiKeyword: 'Chaturdashi',
+    tithiName: 'Chaturdashi (14th Lunar Day) — Rudra & Purification',
+    lunarDay: 14,
+    deity: 'Rudra & Shiva',
+    sanskrit: 'नमस्ते रुद्र मन्यव उतो त इषवे नमः । नमस्ते अस्तु धन्वने बाहुभ्यामुत ते नमः ॥',
+    transliteration: 'Namaste rudra manyava uto ta iṣave namaḥ | namaste astu dhanvane bāhubhyām uta te namaḥ ||',
+    english: 'Salutations to Your righteous indignation, O Rudra, and salutations to Your celestial arrow. Homage be to Your divine bow, and homage to Your mighty arms.',
+    source: 'Taittiriya Samhita (Shri Rudram Namakam 1.1)',
+    essence: 'Purification of Cosmic Tension & Karmic Dissolution',
+    ritualContext: 'Inaugural invocation for Shri Rudra Prasnam and Maha Shivaratri observances.',
+  },
+  {
+    id: 'verse-purnima',
+    tithiKeyword: 'Purnima',
+    tithiName: 'Purnima (15th Lunar Day - Full Moon) — Plenitude & Brahman',
+    lunarDay: 15,
+    deity: 'Sri Satyanarayana & Chandra',
+    sanskrit: 'ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते । पूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते ॥',
+    transliteration: 'Oṁ pūrṇam adaḥ pūrṇam idaṁ pūrṇāt pūrṇam udacyate | pūrṇasya pūrṇam ādāya pūrṇam evāvaśiṣyate ||',
+    english: 'That unseen Transcendent is Full; this manifested Cosmos is Full. From Fullness emerges Fullness. When Fullness is drawn from Fullness, Fullness alone remains.',
+    source: 'Isha Upanishad (Shanti Mantra)',
+    essence: 'Wholeness, Abundance, & Infinite Completeness',
+    ritualContext: 'The concluding peace chant recited at the conclusion of Satyanarayana Vrata and Havans.',
+  },
+  {
+    id: 'verse-amavasya',
+    tithiKeyword: 'Amavasya',
+    tithiName: 'Amavasya (New Moon Day) — Ancestral Honor & Inner Silence',
+    lunarDay: 30,
+    deity: 'Pitru Devatas & Yama',
+    sanskrit: 'उदीरतामवर उत्परास उन्मध्यमाः पितरः सोम्यासः । असुं य ईयुरवृका ऋतज्ञास्ते नोऽवन्तु पितरो हवेषु ॥',
+    transliteration: 'Udīratām avara utparāsa unmadhyamāḥ pitaraḥ somyāsaḥ | asuṁ ya īyur avṛkā ṛtajñās te no’vantu pitaro haveṣu ||',
+    english: 'May our ancestors who dwell in higher, lower, and middle celestial realms arise! The gentle souls who know the cosmic truth, may they protect us in our sacred offerings.',
+    source: 'Rigveda Samhita 10.15.1',
+    essence: 'Ancestral Lineage Grace & Filial Gratitude',
+    ritualContext: 'Recited during Tarpanam, Shraddha rituals, and Amavasya lineage homas.',
+  },
+];
+
+/**
+ * Finds the corresponding wisdom index matching the active Tithi string
+ */
+export function getWisdomIndexForTithi(tithiStr: string): number {
+  if (!tithiStr) return 0;
+  const lower = tithiStr.toLowerCase();
+
+  const foundIndex = VEDIC_WISDOM_COLLECTION.findIndex((v) =>
+    lower.includes(v.tithiKeyword.toLowerCase())
+  );
+
+  return foundIndex !== -1 ? foundIndex : 0;
+}
